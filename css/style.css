@@ -10,7 +10,7 @@ body {
 a,
 button {
     transition: all .3s ease-in-out;
-    outline: none!important;
+    outline: #000000    ;
 }
 
 a:hover {
@@ -133,7 +133,7 @@ a:hover {
 .d-bloc h5 a,
 .d-bloc h6 a,
 .d-bloc p a {
-    color: rgba(255, 255, 255, .6);
+    color: black);
 }
 
 .d-bloc .a-btn:hover,
@@ -222,7 +222,7 @@ a:hover {
 .l-bloc .navbar-brand,
 .l-bloc a .icon-sm,
 .l-bloc a .icon-md,
-.l-bloc a .icon-lg,
+.l-bloc a .icon-lg,         
 .l-bloc a .icon-xl,
 .l-bloc h1 a,
 .l-bloc h2 a,
@@ -329,6 +329,10 @@ a:hover {
     font-size: 16px;
 }
 
+.nav > li:focus {
+    outline: #000000;
+}
+
 .navbar-nav .open .dropdown-menu > li > a {
     text-align: inherit;
 }
@@ -340,11 +344,14 @@ a:hover {
 
 .navbar-toggle {
     margin: 10px 10px 0 0;
-    border: 0px;
 }
 
 .navbar-toggle:hover {
     background: transparent!important;
+}
+
+.navbar-toggle:focus {
+    border: 2px solid black;
 }
 
 .navbar-toggle .icon-bar {
@@ -461,10 +468,6 @@ nav .caret {
     background: rgba(0, 0, 0, .3);
 }
 
-button {
-    outline: none!important;
-}
-
 .btn-rd {
     border-radius: 40px;
 }
@@ -556,6 +559,11 @@ a[data-lightbox]:hover::before {
     -webkit-transform: translateY(-50%);
 }
 
+.center-block {
+    width: 100px;
+    height: 100px;
+}
+
 a[data-lightbox]:hover img {
     opacity: 0.6;
     -webkit-animation-fill-mode: none;
@@ -626,9 +634,18 @@ a[data-lightbox]:hover img {
     right: 25px;
 }
 
+.next-lightbox:focus, 
+.prev-lightbox:focus {
+    outline: #000000;
+}
+
 .prev-lightbox {
     padding: 6px 13px 1px 10px;
     left: 25px;
+}
+
+.prev-lightbox:focus {
+    outline: #000000;
 }
 
 .snapshot-lb .modal-body {
@@ -679,7 +696,7 @@ a {
 }
 
 p {
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .tight-width-whitespace {
@@ -728,10 +745,6 @@ h3 {
     box-shadow: 0px 0px 0px #000000;
 }
 
-h1 {
-    color: #333333!important;
-}
-
 h4 {
     color: #333333!important;
 }
@@ -742,7 +755,7 @@ h4 {
 }
 
 .white {
-    color: #000000!important;
+    color: white;
 }
 
 .portfolio-thumb {
@@ -763,7 +776,7 @@ h4 {
 }
 
 .black-background {
-    background-color: rgba(165, 147, 99, 0.7);
+    background-color: rgba(0, 0, 0, .5);
     padding: 40px 40px 40px 40px;
 }
 
@@ -965,6 +978,11 @@ h4 {
         -webkit-box-shadow: none;
         box-shadow: none;
     }
+
+    .navbar-collapse:focus {
+        outline: #000000;
+    }
+    
     .navbar-brand img {
         max-height: 40px;
         width: 217px;
